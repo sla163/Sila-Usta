@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sıla Usta - Resume</title>
+    <link rel="stylesheet" type="text/css" href="mains.css">
+    
+</head>
+<body>
+    <div class="resume">
+        <img src="Sıla USTA.png"><br><br><br><br><br>
+        <h1>Sıla Usta</h1>
+        <p>Computer Engineering Student</p>
+        <br><br><br><br><br>
+        <div class="education">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Computer Engineering</p>
+            <p>Karabük University, 2nd Year</p>
+        </div>
+        
+        <div class="tSkills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>SQL (Applied Experience)</li>
+                <li>Java</li>
+                <li>Microsoft ASP.NET MVC & Web API</li>
+                <li>C, C#</li>
+            </ul>
+        </div>
+        
+        <div class="oSkills">
+            <h2>Other Skills</h2>
+            <ul>
+                <li>Technical data analysis</li>
+                <li>Database design and implementation</li>
+                <li>Attention to detail</li>
+                <li>Problem-solving</li>
+            </ul>
+        </div>
+
+        <div class="conInfo">
+            <h2>Contact</h2>
+            <p id="contact_us" style="cursor: pointer; user-select: all;" title="Kopyalamak için tıkla">
+                slausta163@gmail.com
+            </p>
+    
+            <nav class="social-links">
+                <a href="https://www.linkedin.com/in/sıla-usta-101a72257" target="_blank">Linkedin</a>
+            <a href="https://github.com/sla163" target="_blank">github
+            </a>
+        </nav>
+        <p>Telefon: +90 507 114 15 09</p>
+    </div>
+
+    </div> 
+
+    <footer>
+        <p>&copy; 2025 Sıla USTA. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact_us").addEventListener("click", function () {
+            const email = this.innerText;
+            navigator.clipboard.writeText(email).then(() => {
+                alert("E-posta adresi kopyalandı!");
+            });
+        });
+    </script>
+</body>
+</html>
